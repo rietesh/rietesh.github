@@ -33,7 +33,10 @@ def index1():
                     recipients = ['receiversid@gmail.com']
                     )
         msg.body = "The sender's emailid: {} \nMessage: {}".format(email, message)
-        mail.send(msg)
+        with open('mail.logs' , 'a') as f:
+            f.write("The sender's emailid: {} \nMessage: {} \n".format(email, message))
+        
+        # mail.send(msg)
         return render_template('thankyou.html')
    
 if __name__ == '__main__':
