@@ -1,28 +1,30 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Rietesh Amminabhavi</title>
-		<link href="images/icon.jpg" rel="icon" style="border-radius:50%">
+		<link href="{{ url_for('static',filename='images/icon.jpg') }}" rel="icon" style="border-radius:50%">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="{{ url_for('static',filename='js/ie/html5shiv.js') }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static',filename='css/ie8.css') }}" /><![endif]-->
 	</head>
 	<body id="top">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="https://www.linkedin.com/in/rietesh4535/"target="_blank" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Rietesh Amminabhavi</strong>, Hackaveloper <br />
-					| Infosec | Blockchain Devloper | CTF <br />
-					| Network Security </h1>
+					<a href="{{ url_for("index")}}"target="_self" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
+					<h1><strong>Rietesh Amminabhavi</strong></h1> 
+					<h4>Data Science Developer<br />
+					| Python | GNSS | Blockchain<br />
+					| CTF | Network Security </h4><br /><br /><br /><br />
+					<h4>Education</h4>
+					<p><strong>Master of Applied Data Science</strong><br />
+					University of Michigan, 2020-2022<br /><br />
+					<strong>Bachelor of Technology in Physics</strong><br \>
+					Indian Institute of Technology Guwahati, 2016-2020</p>
 				</div>
 			</header>
 
@@ -32,15 +34,15 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>My name is Rietesh Amminabhavi, Final year Btech student at IIT Guwahati, India.<br />
-							I like Testing computer systems to their threshold</h2>
+							<h2>Welcome</h2>
 						</header>
-						<p>Gaming introduced me to Computers, Defeating Omar in 'CLAW' to building huge empires in 'Age of empires' was my obsession during high school.
-My present college IIT Guwahati gave me lot of opportunities to explore my interests. Blockchain and Network Security were the topics that interested me a lot.
-I took up courses on these topics. In my sophomore year I did Machine learning course and Interned during the summer, built Neural networks and SVMs.
-Pre-final year, I participated in various Hackathons and  CTF's mainly online(HackTheBox) submitted bugs for our Institute's Bug bounty program, Interned at Airbus India as a Cybersceurity Analyst.
-Where I worked on Vendor Security Risk Framework as part of ISO27001. In India Dapp Conference, I built a Webapp using Hyperledger Composer and deployed it on Hyperledger Fabric. I play Field hockey, As a hobby I love reading Novels and I play Baritone Ukulele.
-.</p>
+						<h4>Hi, I'm Rietesh.</h4>
+						<p>As a Data Scientist, I'm passionate about using data to drive positive change in the world. 
+							I specialize in using machine learning and predictive analytics to solve complex business problems.<br \>
+							I currently work at <a href="https://nextnav.com/"><strong>NextNav</strong></a> as a Data Scientist for the TerraPoiNT solution.
+							Previously I have worked at <a href="https://www.gstn.org.in/"><strong>GSTN</strong></a> in the Business Intelligence and Fraud Detection team.<br \>
+							When I'm not geeking out over datasets, you can find me playing video games, exploring new coffee shops, cooking and trying new craft beers.
+						</p>
 					</section>
 
 				<!-- Two -->
@@ -48,51 +50,51 @@ Where I worked on Vendor Security Risk Framework as part of ISO27001. In India D
 						<h2>Blogs and Projects</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/28de5bc5e6fb" target="_blank"><img src="images/10.PNG" alt="" /></a>
+								<a href="https://medium.com/@rietesh/28de5bc5e6fb" target="_blank"><img src="static/images/10.PNG" alt="" /></a>
 								<a href="https://medium.com/@rietesh/28de5bc5e6fb"  target="_blank"><h3>MusicChain</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/d05ef4f2bbf8" target="_blank"><img src="images/iroha.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/d05ef4f2bbf8" target="_blank"><img src="static/images/iroha.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/d05ef4f2bbf8"  target="_blank"><h3>Hyperledger Iroha: Tokenization of organs</h3></a>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684" target="_blank"><img src="images/serverless.png" alt="" /></a>
+							<article class="6u 12u$(xsmall) work-item">							
+								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684" target="_blank"><img src="static/images/serverless.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684"  target="_blank"><h3>Serverless computing, Implementation of Function as a Service in a Local Private Cloud</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><img src="images/01.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><img src="static/images/01.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><h3>Deploying a Hyperledger Composer blockchain business network to Hyperledger Fabric.</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><img src="images/02.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><img src="static/images/02.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><h3>Cointegration of Hong Kong, US and Indian Stock Markets in Python.</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><img src="images/03.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><img src="static/images/03.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><h3>CATS vs DOGS + FLASK + DOCKER + KUBERNETES</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><img src="images/04.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><img src="static/images/04.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><h3>Curling write-up HackTheBox</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><img src="images/05.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><img src="static/images/05.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><h3>Brute-Forcing directories and files Locations in python</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><img src="images/07.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><img src="static/images/07.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><h3>“CARTOGRAPHER” Web challenge from HackTheBOX(HTB)</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><img src="images/06.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><img src="static/images/06.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><h3>A small bug in the Election portal</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><img src="images/08.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><img src="static/images/08.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><h3>PYTHON REVERSE SHELL (HACK YOUR NEIGHBOURS!!!)</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><img src="images/09.png" alt="" /></a>
+								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><img src="static/images/09.png" alt="" /></a>
 								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><h3>Python Rat-Attack Game</h3></a>
 							</article>
 						</div>
@@ -105,16 +107,14 @@ Where I worked on Vendor Security Risk Framework as part of ISO27001. In India D
 						<p>I would love to get feedback and suggestions so please contact me below or any of the Social media platforms</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								<form method="post" action="#">
+								<form method="post" action="{{ url_for("index1")}}">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<button type="submit">Submit</button>
 									</div>
 								</form>
-								<ul class="actions">
-									<li><input id="sub_btn" type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 						</div>
 					</section>
@@ -126,10 +126,10 @@ Where I worked on Vendor Security Risk Framework as part of ISO27001. In India D
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="https://twitter.com/rietesh_" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://github.com/rietesh"  target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://medium.com/@rietesh"  target="_blank" class="icon fa-medium"><span class="label">Medium</span></a></li>
 						<li><a href="https://www.linkedin.com/in/rietesh4535/"  target="_blank" class="icon fa-linkedin"><span class="label">LinkedIN</span></a></li>
+						<li><a href="https://twitter.com/rietesh_" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.facebook.com/RieteshRietesh1"  target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 				</div>
@@ -137,13 +137,12 @@ Where I worked on Vendor Security Risk Framework as part of ISO27001. In India D
 
 		<!-- Scripts -->
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
 			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/mail.js"></script>
+			<script src="{{ url_for('static',filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/util.js') }}"></script>
+			<!--[if lte IE 8]><script src="{{ url_for('static',filename='js/ie/respond.min.js') }}"></script><![endif]-->
+			<script src="{{ url_for('static',filename='js/main.js') }}"></script>
 
 	</body>
 </html>
