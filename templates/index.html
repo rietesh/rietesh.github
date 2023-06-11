@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ url_for('static',filename='js/ie/html5shiv.js') }}"></script><![endif]-->
 		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/pagination.css') }}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static',filename='css/ie8.css') }}" /><![endif]-->
 	</head>
 	<body id="top">
@@ -15,7 +16,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="{{ url_for("index")}}"target="_self" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
+					<a href="{{ url_for('index')}}" target="_self" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
 					<h1><strong>Rietesh Amminabhavi</strong></h1> 
 					<h4>Data Science Developer<br />
 					| Python | GNSS | Blockchain<br />
@@ -42,63 +43,76 @@
 							I currently work at <a href="https://nextnav.com/"><strong>NextNav</strong></a> as a Data Scientist for the TerraPoiNT solution.
 							Previously I have worked at <a href="https://www.gstn.org.in/"><strong>GSTN</strong></a> in the Business Intelligence and Fraud Detection team.<br \>
 							When I'm not geeking out over datasets, you can find me playing video games, exploring new coffee shops, cooking and trying new craft beers.
+							<!-- <script src="https://gist.github.com/BenjaminAbt/ee4f77b9c5f3068506dd0d43df57f8f8.js?file=file1.cs"></script> -->
 						</p>
 					</section>
 
 				<!-- Two -->
 					<section id="two">
 						<h2>Blogs and Projects</h2>
-						<div class="row">
+						<div id="paginated-list" data-current-page="1" aria-live="polite" class="row" style="display:flex;flex-wrap:wrap">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/28de5bc5e6fb" target="_blank"><img src="static/images/10.PNG" alt="" /></a>
+								<a href="https://medium.com/@rietesh/28de5bc5e6fb" target="_blank"><img style="width:100%" src="static/images/10.PNG" alt="" /></a>
 								<a href="https://medium.com/@rietesh/28de5bc5e6fb"  target="_blank"><h3>MusicChain</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/d05ef4f2bbf8" target="_blank"><img src="static/images/iroha.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/d05ef4f2bbf8" target="_blank"><img style="width:100%" src="static/images/iroha.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/d05ef4f2bbf8"  target="_blank"><h3>Hyperledger Iroha: Tokenization of organs</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">							
-								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684" target="_blank"><img src="static/images/serverless.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684" target="_blank"><img style="width:100%" src="static/images/serverless.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/exploring-serverless-computing-and-implementation-of-function-as-a-service-in-a-local-private-cloud-4c561927e684"  target="_blank"><h3>Serverless computing, Implementation of Function as a Service in a Local Private Cloud</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><img src="static/images/01.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><img style="width:100%" src="static/images/01.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/deploying-a-hyperledger-composer-blockchain-business-network-to-hyperledger-fabric-c14a3b2bb746"  target="_blank"><h3>Deploying a Hyperledger Composer blockchain business network to Hyperledger Fabric.</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><img src="static/images/02.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><img style="width:100%" src="static/images/02.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cointegration-of-hong-kong-us-and-indian-stock-markets-in-python-b01962dcd3e1"  target="_blank"><h3>Cointegration of Hong Kong, US and Indian Stock Markets in Python.</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><img src="static/images/03.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><img style="width:100%" src="static/images/03.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cats-vs-dogs-flask-docker-kubernetes-4df439519675"  target="_blank"><h3>CATS vs DOGS + FLASK + DOCKER + KUBERNETES</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><img src="static/images/04.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><img style="width:100%" src="static/images/04.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/curling-write-up-hackthebox-5fa9491b6239"  target="_blank"><h3>Curling write-up HackTheBox</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><img src="static/images/05.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><img style="width:100%" src="static/images/05.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/brute-forcing-directories-and-files-locations-in-python-adad6499167b"  target="_blank"><h3>Brute-Forcing directories and files Locations in python</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><img src="static/images/07.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><img style="width:100%" src="static/images/07.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/cartographer-web-challenge-from-hackthebox-htb-db866fc7e67f"  target="_blank"><h3>“CARTOGRAPHER” Web challenge from HackTheBOX(HTB)</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><img src="static/images/06.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><img style="width:100%" src="static/images/06.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/a-small-bug-in-election-portal-ba9935484ac9"  target="_blank"><h3>A small bug in the Election portal</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><img src="static/images/08.png" alt="" /></a>
+								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><img style="width:100%" src="static/images/08.png" alt="" /></a>
 								<a href="https://medium.com/@rietesh/python-reverse-shell-hack-your-neighbours-552561336ca8"  target="_blank"><h3>PYTHON REVERSE SHELL (HACK YOUR NEIGHBOURS!!!)</h3></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><img src="static/images/09.png" alt="" /></a>
+								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><img style="width:100%" src="static/images/09.png" alt="" /></a>
 								<a href="https://github.com/rietesh/rat_attack_game"  target="_blank"><h3>Python Rat-Attack Game</h3></a>
 							</article>
+							<nav class="pagination-container">
+								<button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+								  &lt;
+								</button>
+							
+								<div id="pagination-numbers">
+							
+								</div>
+							
+								<button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+								  &gt;
+								</button>
+							  </nav>
 						</div>
-
 					</section>
 
 				<!-- Three -->
@@ -108,11 +122,15 @@
 						<div class="row">
 							<div class="8u 12u$(small)">
 								<form method="post" action="{{ url_for("index1")}}">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="row uniform 50%" style="display: flex; flex-direction: column;">
+										<div style="display: flex;">
+											<div class="6u 12u$(xsmall)" style="margin-right: 1rem;"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										</div>
+										
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-										<button type="submit">Submit</button>
+										
+										<button type="submit" style="width: 5rem; align-self: center; padding: 0.5rem 1rem; margin-top: 1rem;">Submit</button>
 									</div>
 								</form>
 							</div>
@@ -143,6 +161,7 @@
 			<script src="{{ url_for('static',filename='js/util.js') }}"></script>
 			<!--[if lte IE 8]><script src="{{ url_for('static',filename='js/ie/respond.min.js') }}"></script><![endif]-->
 			<script src="{{ url_for('static',filename='js/main.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/pagination.js') }}"></script>
 
 	</body>
 </html>
